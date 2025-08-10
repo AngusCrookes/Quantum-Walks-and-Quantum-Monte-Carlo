@@ -44,7 +44,7 @@ This circuit will generate a normal distribution.
 
 ### Exponential Distribution
 
-The function `generate_custom_qgb()` can also generate an exponential distribution with the correct choice of pegs. In particular, `generate_thetas(n,p)` forms the required rotation angles for an exponential distribution $\sim \lambda e^{-\lambda x}$ given a probabilitiy $p=1-e^{-\lambda/m}$ where $1/m$ is the size of the bucket spacing. 
+The function `generate_custom_qgb()` can also generate an exponential distribution. In particular, `generate_thetas(n,p)` forms the required rotation angles for an exponential distribution $\sim \lambda e^{-\lambda x}$ given a probabilitiy $p=1-e^{-\lambda/m}$ where $1/m$ is the size of the bucket spacing. 
 
 ```
 # number of layers 
