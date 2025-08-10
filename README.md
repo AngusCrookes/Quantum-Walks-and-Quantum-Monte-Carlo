@@ -97,7 +97,7 @@ counts = result.get_counts(circuit)
 
 Project Name: Quantum Walks and Quantum Monte Carlo 
 
-Team Name: angusQuantum
+Team Name: angusQUANTUM
 
 Team Members: Angus Crookes
 
