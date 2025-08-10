@@ -6,7 +6,7 @@ The Quantum Galton Board (QGB) is capable of simulating statistical distribution
 
 This project enables the generation of a general QGB with arbitrary left ($p$) and right ($q$) drop probabilities for each peg, for any number of layers. It also provides functions tailored to generate exponential and Quantum Hadamard Random Walk (QHRD) distributions.
 
-A walkthrough of all simulations is found in `qgb_simulations.ipynb`. The functions to generate each QGB are in `qgb_functions.py`
+A walkthrough of all simulations is found in `qgb_simulations.ipynb`. The functions to generate each QGB are in `qgb_functions.py`. The two-page summary is in the folder `Presentations and Summary`.
 
 ### Normal distribution
 
