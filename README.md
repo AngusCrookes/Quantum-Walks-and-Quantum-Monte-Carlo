@@ -6,11 +6,11 @@ The Quantum Galton Board (QGB) is capable of simulating statistical distribution
 
 This project enables the generation of a general QGB with arbitrary left ($p$) and right ($q$) drop probabilities for each peg, for any number of layers. It also provides functions tailored to generate exponential and Quantum Hadamard Random Walk (QHRD) distributions.
 
-All simulations are found in `qgb_simulations.ipynb`. The functions to generate each circuit are in `qgb_functions.py`. The two-page summary is in the folder `Presentations and Summary`.
+All simulations are found in `qgb_simulations.ipynb`. The functions to generate each circuit are in `quantum_galton_boards.py`. The two-page summary is in the folder `Presentations and Summary\QGB_SUMMARY_PDF.pdf`.
 
 ### Normal distribution
 
-The function `generate_qgb(n)` generates a quantum circuit for a QGB with $n$ layers. This specific function forces the left and right drop probabilities at each peg to be equal i.e. $p=0.5$. An example of how to use this function is shown below:
+The function `generate_qgb(n)` generates a quantum circuit for a QGB with $n$ layers. This function forces the left and right drop probabilities at each peg to be equal i.e. $p=0.5$. An example of how to use this function is shown below:
 
 ```
 # number of layers 
@@ -23,7 +23,7 @@ circuit = generate_qgb(n)
 circuit.draw(output="mpl")
 ```
 
-The function `generate_custom_qgb(n, thetas)` generates a more general quantum circuit. The additional argument thetas is a list of rotation angles corresponding to the left drop probabilities on each peg.
+The function `generate_custom_qgb(n, thetas)` creates a more general QGB. The additional argument thetas is a list of rotation angles corresponding to left drop probabilities on each peg.
 $[\theta_1, \theta_2, \theta_3]$ corresponds $[p_1,p_2,p_3]$ where $\theta_i = 2\arcsin(\sqrt{p_i})$. Each peg in the board is numbered from top to bottom, left to right. For example, the previous circuit can be reproduced in the following way:
 
 ```
